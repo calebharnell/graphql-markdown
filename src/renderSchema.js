@@ -61,13 +61,13 @@ function renderObject(type, options) {
     if (field.description || field.isDeprecated) {
       printer('<td>')
       if (field.description) {
-        printer(`\n${field.description}\n`)
+        printer(`${field.description}`)
       }
       if (field.isDeprecated) {
         printer('<p>⚠️ <strong>DEPRECATED</strong></p>')
         if (field.deprecationReason) {
           printer('<blockquote>')
-          printer(`\n${field.deprecationReason}\n`)
+          printer(`${field.deprecationReason}`)
           printer('</blockquote>')
         }
       }
@@ -155,8 +155,6 @@ function renderSchema(schema, options) {
   }
 
   if (!skipTableOfContents) {
-    printer('<details>')
-    printer('  <summary><strong>Table of Contents</strong></summary>\n')
     if (query) {
       printer('  * [Query](#query)')
     }
@@ -193,7 +191,6 @@ function renderSchema(schema, options) {
         printer(`    * [${type.name}](#${type.name.toLowerCase()})`)
       })
     }
-    printer('\n</details>')
   }
 
   if (query) {
