@@ -29,7 +29,7 @@ function renderObject(type, options) {
   const isInputObject = type.kind === 'INPUT_OBJECT'
 
   if (!skipTitle) {
-    printer(`\n\n<br>\n`)
+    printer(`\n<br>`)
     printer(`\n${'#'.repeat(headingLevel + 2)} ${type.name}\n`)
   }
   if (type.description) {
@@ -192,6 +192,7 @@ function renderSchema(schema, options) {
         printer(`    * [${type.name}](#${type.name.toLowerCase()})`)
       })
     }
+    printer(`<br>`)
   }
 
   if (query) {
