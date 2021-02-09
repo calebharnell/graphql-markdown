@@ -1,5 +1,5 @@
 {
-  "name": "@calebharnell/graphql-markdown",
+  "name": "graphql-markdown-generator",
   "version": "1.0.1",
   "description": "Generate documentation for your GraphQL schema in Markdown",
   "main": "src/index.js",
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com/calebharnell/graphql-markdown.git"
   },
-  "author": "Caleb Harnell <calebharnell.com>",
+  "author": "Caleb Harnell <calebharnell@hotmail.com>",
   "license": "MIT",
   "engines": {
     "node": ">=8.10.0"
