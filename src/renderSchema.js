@@ -149,6 +149,7 @@ function renderSchema(schema, options) {
 
   if (!skipTitle) {
     printer(`${'#'.repeat(headingLevel)} ${title}\n`)
+    printer(`<br>\n`)
   }
 
   if (prologue) {
