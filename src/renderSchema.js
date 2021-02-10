@@ -193,7 +193,7 @@ function renderSchema(schema, options) {
         printer(`    * [${type.name}](#${type.name.toLowerCase()})`)
       })
     }
-    printer(`<br>`)
+    printer(`\n<br>`)
   }
 
   if (query) {
